@@ -1,32 +1,81 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>你被骗了</title>
-    <style>
-        body {
-            background-color: #fff0f5;
-            text-align: center;
-            font-family: "微软雅黑", sans-serif;
-        }
-        h1 {
-            font-size: 50px;
-            color: red;
-            margin-top: 40px;
-        }
-        iframe {
-            margin-top: 30px;
-            width: 800px;
-            height: 500px;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>主页</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Noto Sans SC", sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #8ec5fc;
+      background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    main {
+      max-width: 800px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .download-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .download-button:hover {
+      background-color: #357abd;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <h1>你被骗了</h1>
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1UT42167xb&autoplay=1" 
-            allowfullscreen="true">
-    </iframe>
+  <header>
+    <h1>🎵 网易云 .ncm 解密工具</h1>
+    <p></p>
+  </header>
+
+  <main>
+    <p>这个工具可以帮助你将网易云音乐的 `.ncm` 格式文件解密成普通音频文件.mp3，本工具仅供学习和交流，请勿用于违法用途，任何后果不由作者承担。  
+    </p>
+
+    <a href="downloads/ncm_decryptor.zip" class="download-button" download>
+      📥 立即下载解密工具
+    </a>
+  </main>
+
+  <footer>
+   
+  </footer>
 </body>
 </html>
-
